@@ -1,0 +1,17 @@
+﻿
+@model Yazar
+
+<h2>Yazar Güncelle</h2>
+
+<form asp-controller="Yazar" asp-action="UpdateYazar" method="post">
+	<div class="form-group">
+		<label for="Name">Yazarın Adı: </label>
+		<input asp-for="Name" class="form-control" type="text" name="Name" />
+	</div>
+	<div class="form-group">
+		<label for="Age">Yazarın Yaşı: </label>
+		<input asp-for="Age" class="form-control" type="text" name="Age" />
+	</div>
+	<input asp-for="Id" hidden />
+	<button class="btn btn-primary" type="submit">Yazarı Güncelle</button>
+</form>

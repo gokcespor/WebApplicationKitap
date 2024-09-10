@@ -1,0 +1,15 @@
+﻿
+@model Kitap
+
+<h2>Yeni Kitap Ekle</h2>
+<form asp-controller="Kitap" asp-action="CreateKitap" method="post">
+	<div class="form-group">
+		<label for="Title">Kitap Adı: </label>
+		<input type="text" class="form-control" name="Title" />
+	</div>
+	<div class="form-group">
+		<label for="ISBN">ISBN Numarası: </label>
+		<input type="text" class="form-control" name="ISBN" />
+	</div>
+	<button type="submit" class="btn btn-primary">Kitap Ekle</button>
+</form>

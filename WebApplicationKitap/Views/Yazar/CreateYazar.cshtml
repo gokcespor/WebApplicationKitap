@@ -1,0 +1,17 @@
+﻿
+@model Yazar
+
+<h2>Yeni Yazar Ekle</h2>
+
+<form asp-controller="Yazar" asp-action="CreateYazar" method="post">
+	<div class="form-group">
+		<label for="Name">Yazarın Adı: </label>
+		<input class="form-control" type="text" name="Name" />
+		<span asp-validation-for="Name" class="text-danger"></span>
+	</div>
+	<div class="form-group">
+		<label for="Age">Yazarın Yaşı: </label>
+		<input class="form-control" type="number" name="Age" required/>
+	</div>
+	<button class="btn btn-primary" type="submit" >Yazarı Ekle</button>
+</form>
